@@ -152,6 +152,9 @@ main{
     nav ul li{
         font-size: 11px;
     }
+    .chooseus{
+        background-image: url(https://source.unsplash.com/800x800/?gym,fitness);
+    }
 }
 /* table */
 #table{
