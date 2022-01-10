@@ -34,10 +34,11 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    opacity: 0.9;
+    opacity: 0.65;
     flex-wrap: wrap;
     /* height: 10vh; */
     font-size: larger;
+    position: sticky;
 }
 .logocontainer{
     
