@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Roman&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#logo {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+}
+
+#logo img {
+    height: 60px;
+    filter: invert(1);
+}
+
+#navbar {
+    padding: 20px 14px;
+
+    font-family: 'Playfair Display', serif;
+    /* font-size: larger; */
+    background-color: orangered;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    padding: 13px 30px;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+#navbar li a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+#introSection {
+    height: 625px;
+    background: center/cover no-repeat url("/static/dance.jpg");
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 3.5rem;
+    padding-bottom: 40px;
+
+}
+
+.small {
+    font-size: 1.75rem;
+    padding: 10px;
+}
+
+#introSection p {
+    text-align: center;
+}
+
+#missionSectionback {
+    background: rgb(230, 145, 17);
+    background: radial-gradient(circle, rgba(230, 145, 17, 1) 0%, rgba(252, 70, 71, 1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s linear infinite;
+
+}
+
+
+#missionSection {
+    /* height: 300px; */
+    width: 67%;
+    margin: auto;
+    background: linear-gradient(-45deg, #ee3e08, #e2b213, #dc2f14, #d5a623);
+    background-size: 400% 400%;
+    animation: gradient 8s linear infinite;
+
+
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 50% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 15px;
+    display: inline-block;
+    height: 209px;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 12px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.card-box {
+    display: flex;
+    height: 25%;
+    /* width: 50%; */
+    margin-top: 35px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.card-img {
+    height: 125%;
+    /* padding: 0px 14px; */
+    /* margin: 5px 5px; */
+
+}
+
+.card-img img {
+    height: inherit;
+    /* padding: 0px 14px; */
+}
+
+.card-content {
+    padding: 4px 2px;
+}
+
+.card-content p {
+    font-size: 19px;
+}
+@media only screen and (max-width:1478px) {
+    #missionSection{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 75%;
+    }
+    .card img{
+        padding: 0px 8px;
+    }
+    .card h3{
+        font-size: larger;
+        font-weight: bold;
+    }
+    .card-content p{
+        font-size: 25px;
+    }
+}
+
+#missionSection h2 {
+    font-size: 23px;
+    text-align: center;
+    padding-top: 23px;
+    font-family: 'Playfair Display', serif;
+}
+
+#sponsorSection {
+    height: 300px;
+    /* background-color: rgba(255, 81, 0, 0.842); */
+    background: rgb(232, 125, 38);
+    background: linear-gradient(90deg, rgba(232, 125, 38, 1) 0%, rgba(239, 185, 6, 1) 27%, rgba(211, 68, 20, 1) 100%);
+}
+
+#sponsorSection h2 {
+    font-size: 23px;
+    text-align: center;
+    padding-top: 23px;
+    font-family: 'Playfair Display', serif;
+}
+
+#sponsors {
+    height: 186px;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.spImage {
+    height: 80%;
+    margin: 20px;
+}
+
+#footer {
+    height: 60px;
+    background-color: black;
+    color: #b21515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Luxurious Roman', cursive;
+
+}
